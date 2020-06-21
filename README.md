@@ -12,6 +12,7 @@
 
 「 你再骂？！(恳求) 」
 
+
 ## Preview
 
 ![kugimiya](./preview/Kugimiya-preview.png)
@@ -21,12 +22,17 @@
 
 ## Install
 
-从[本仓库](https://github.com/zthxxx/kugimiya-rainbow-fart/) clone 后自己打包，或者直接在 [Releases](https://github.com/zthxxx/kugimiya-rainbow-fart/releases) 中下载最新版
+从[本仓库](https://github.com/zthxxx/kugimiya-rainbow-fart/) clone 后自己打包成 zip，或者直接在 [Releases](https://github.com/zthxxx/kugimiya-rainbow-fart/releases) 中下载最新版 zip
+
+然后在本地 vscode 启动的 rainbow-fart 页面中 Settings -> Voice Packages -> Import 中导入 zip，再点 Refresh
+
+![import](./preview/import.png)
+
 
 ## Contribute
 
-
 目前关键词和语音 意很不希望众钉宫病患者厨力放出，完善一下语音和对应关键词，让钉宫骂得更爽一点
+
 
 ## Ref
 
