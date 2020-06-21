@@ -1,0 +1,23 @@
+{
+  "name": "kugimiya-rainbow-fart",
+  "version": "0.0.1",
+  "description": "Kugimiya voice for vscode-rainbow-fart",
+  "main": "manifest.json",
+  "scripts": {
+    "zip": "./scripts/zip.sh"
+  },
+  "author": "zthxxx",
+  "repository": "zthxxx/kugimiya-rainbow-fart",
+  "keywords": [
+    "kugimiya",
+    "rainbow-fart"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "bugs": {
+    "url": "https://github.com/zthxxx/kugimiya-rainbow-fart/issues"
+  },
+  "homepage": "https://github.com/zthxxx/kugimiya-rainbow-fart"
+}

@@ -1,0 +1,6 @@
+.idea
+.vscode
+
+/dist
+
+*.zip
