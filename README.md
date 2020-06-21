@@ -22,9 +22,13 @@
 
 ## Install
 
-从[本仓库](https://github.com/zthxxx/kugimiya-rainbow-fart/) clone 后自己打包成 zip，或者直接在 [Releases](https://github.com/zthxxx/kugimiya-rainbow-fart/releases) 中下载最新版 zip
+在 vscode-rainbow-fart(v1.2.0) 中引入语音包是需要打包成 zip 然后引用的，
 
-然后在本地 vscode 启动的 rainbow-fart 页面中 Settings -> Voice Packages -> Import 中导入 zip，再点 Refresh
+本项目已经提供了打包好的文件，可以直接在 [Releases](https://github.com/zthxxx/kugimiya-rainbow-fart/releases) 中下载最新版 zip；
+
+或者从[本仓库](https://github.com/zthxxx/kugimiya-rainbow-fart/) clone 后自己手动把相关资源打包成 zip (不能使用 git clone 提供的下载 zip #3)。
+
+然后在本地 vscode 启动的 rainbow-fart 配置页面中 `Settings` -> `Voice Packages` -> `Import` 中导入 zip，导入后需要点 enable 开关开启使用
 
 ![import](./preview/import.png)
 
