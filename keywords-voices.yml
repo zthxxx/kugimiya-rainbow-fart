@@ -1,0 +1,220 @@
+---
+# Customize Voice Packages
+# https://saekiraku.github.io/vscode-rainbow-fart/#/zh/voice-packages.md
+
+languages:
+  - javascript
+  - typescript
+  - python
+  - golang
+
+contributes:
+  # vscode-rainbow-fart built-in magic keys
+  - keywords:
+      - $time_morning
+      - $time_noon
+      - $time_evening
+      - $time_midnight
+      - $time_each_hour
+    voices:
+      - voices/02-いい加減、目覚まし時計で起きなさいよね！何でいつも私が起こさなきゃいけないのよ！！.mp3
+      - voices/05-おはよーじゃなくて、おはようございますでしょっ.mp3
+      - voices/25-電話なんかしてこなくても…寂しくなんてないんだから….mp3
+      - voices/57-えっふぅふぅしてくれ？ばかぁー.mp3
+
+  # typos
+  - keywords:
+      - sleect  # typo of select
+      - fliter  # typo of filter
+      - fitler  # typo of filter
+      - deatil  # typo of detail
+      - Deatil  # typo of detail
+      - deafult  # typo of default
+      - Deafult  # typo of default
+      - funtion  # typo of function
+      - ture  # typo of true
+      - frist  # typo of first
+      - filed  # typo of field
+      - Filed  # typo of field
+      - lable  # typo of label
+      - Lable  # typo of label
+      - Shema  # typo of schema
+      - Schame  # typo of schema
+      - Resiable  # typo of resizable
+      - Dasbhoard  # typo of dashboard
+      - submited  # typo of submitted
+      - Submited  # typo of submitted
+      - submiting  # typo of submitting
+      - cancle  # typo of cancel
+      - avaliable  # typo of available
+      - delimeter  # typo of delimiter
+      - attibute  # typo of attribute
+      - confrim  # typo of confirm
+      - formated  # typo of formatted
+      - Pannel  # typo of panel
+      - Soruce  # typo of source
+      - Categorys  # typo of categories
+      - Propety  # typo of property
+      - Feaure  # typo of Feature
+    voices:
+      - voices/01-アンタなんて豆腐の角に頭ぶつけて死んじゃえばいいのよ！.mp3
+      - voices/11-このぉバカ！-.mp3
+      - voices/13-心配なんてしてないんだからね！.mp3
+      - voices/15-もう…バカ….mp3
+      - voices/21-ちょっと待ちなさいよ！この鈍感男！.mp3
+      - voices/27-な、なによあいつ！.mp3
+      - voices/31-寝起きになにしてんのよ！.mp3
+      - voices/34-ひ…ひざまくらぁ!……い、一分だけだからねっ.mp3
+      - voices/39-ボケーっとしてるんじゃないわよ！！.mp3
+      - voices/47-涙じゃないわよぉーーー！.mp3
+      - voices/48-もぉ～バカバカバカ！！.mp3
+      - voices/61-ろくなことがないわね…あんたと一緒にいられるのは私くらいなんだから….mp3
+
+  - keywords:
+      - setTimeout(
+      - setInterval(
+    voices:
+      - voices/21-ちょっと待ちなさいよ！この鈍感男！.mp3
+      - voices/34-ひ…ひざまくらぁ!……い、一分だけだからねっ.mp3
+      - voices/39-ボケーっとしてるんじゃないわよ！！.mp3
+      - voices/60-連絡くらいよこしなさいよ！心配したんだから….mp3
+
+  - keywords:
+      - 'import '
+    voices:
+      - voices/24-ついでだから、あんたも誘ってあげるわ.mp3
+      - voices/26-隣に来ないでよ、恥ずかしいじゃない.mp3
+      - voices/40-蹴り飛ばすわよ！.mp3
+      - voices/41-まっ…まぁ、アナタがどうしてもって言うのなら.mp3
+
+  - keywords:
+      - 'function '
+      - '() => '
+    voices:
+      - voices/15-もう…バカ….mp3
+      - voices/16-全力で来なさいよ？叩き潰してあげるから.mp3
+      - voices/20-これプレゼント….mp3
+      - voices/23-なんで気付かないのよぉ！.mp3
+      - voices/42-仕方ないけど….mp3
+      - voices/58-利用するに値しないわね。アンタなんか….mp3
+
+  - keywords:
+      - if (
+      - ' ? '
+    voices:
+      - voices/06-勘違いしないでよね.mp3
+      - voices/22-なんで….mp3
+      - voices/38-もう知らない….mp3
+      - voices/49-知らない知らない知らない.mp3
+      - voices/51-優柔不断な奴はキライだからね！.mp3
+      - voices/59-全然嬉しくないんだからっ.mp3
+
+  - keywords:
+      - else {
+    voices:
+      - voices/15-もう…バカ….mp3
+      - voices/36-今日は仕方ないわね….mp3
+      - voices/38-もう知らない….mp3
+
+  - keywords:
+      - for (
+      - while (
+      - switch (
+      - .map(
+    voices:
+      - voices/03-うるさい、うるさい、うるさい！.mp3
+      - voices/37-変態、変態、変態、変態、変態バカ大変態！！！.mp3
+      - voices/15-もう…バカ….mp3
+      - voices/48-もぉ～バカバカバカ！！.mp3
+
+  - keywords:
+      - 'async '
+    voices:
+      - voices/43-見せたいわけじゃないんだから！.mp3
+
+  - keywords:
+      - 'await '
+    voices:
+      - voices/17-そばにいなさい！一生よ！いいわね！.mp3
+      - voices/30-もうっ、知らない、バカ！！何言わせんのよ！！.mp3
+      - voices/33-恥ずかしいけど、手、手くらい繋いであげてもいいわよ、ホラ！！.mp3
+      - voices/60-連絡くらいよこしなさいよ！心配したんだから….mp3
+
+  - keywords:
+      - try{
+      - try {
+      - 'try:'
+    voices:
+      - voices/06-勘違いしないでよね.mp3
+      - voices/13-心配なんてしてないんだからね！.mp3
+      - voices/31-寝起きになにしてんのよ！.mp3
+      - voices/51-優柔不断な奴はキライだからね！.mp3
+
+  - keywords:
+      - 'catch '
+      - 'except:'
+    voices:
+      - voices/04-選んだのは私でアンタじゃないんだからね.mp3
+      - voices/52-よくないわよ。.mp3
+
+  - keywords:
+      - "continue\n"
+      - "break\n"
+      - "exit\n"
+      - finally
+    voices:
+      - voices/07-別にあんたのためにやったわけじゃないんだから.mp3
+      - voices/10-怪我でもされたら、私が困るじゃない.mp3
+      - voices/12-さよならなんて言ってあげないんだから！.mp3
+      - voices/16-全力で来なさいよ？叩き潰してあげるから.mp3
+      - voices/29-逃げないで、話くらいちゃんと聞きなさいよね.mp3
+
+  - keywords:
+      - return null
+      - "return\n"
+    voices:
+      - voices/45-無視しないでよ！謝るから！.mp3
+
+  - keywords:
+      - this.
+      - self.
+      - public
+      - private
+      - extends
+    voices:
+      - voices/35-ふ、二人しかいないんなら….mp3
+      - voices/36-今日は仕方ないわね….mp3
+      - voices/42-仕方ないけど….mp3
+      - voices/43-見せたいわけじゃないんだから！.mp3
+      - voices/44-あんただから….mp3
+      - voices/58-利用するに値しないわね。アンタなんか….mp3
+      - voices/62-わ、私だけを見ていればいいのよ！.mp3
+
+
+  # some special words maybe in variables
+  - keywords:
+      - like
+    voices:
+      - voices/14-好きでこんな格好してるわけじゃないんだからね…あんたの前だけよ….mp3
+      - voices/20-これプレゼント….mp3
+      - voices/55-あたしのこと好きでも嫌いでもないなんて言うのは.mp3
+
+  - keywords:
+      - kiss
+    voices:
+      - voices/08-キスなんて100年早いわよ！！.mp3
+
+  - keywords:
+      - opai
+    voices:
+      - voices/09-くっ…胸のことを….mp3
+
+  - keywords:
+      - hello
+    voices:
+      - voices/19-はい.mp3
+
+  - keywords:
+      - ' no '
+    voices:
+      - voices/32-NOとは言わせないわよ！.mp3

@@ -1,23 +1,42 @@
 {
   "name": "kugimiya-rainbow-fart",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Kugimiya voice for vscode-rainbow-fart",
   "main": "manifest.json",
   "scripts": {
-    "zip": "./scripts/zip.sh"
+    "build": "node -r esm node_modules/.bin/gulp",
+    "changelog": "standard-version"
   },
   "author": "zthxxx",
   "repository": "zthxxx/kugimiya-rainbow-fart",
   "keywords": [
     "kugimiya",
-    "rainbow-fart"
+    "rainbow-fart",
+    "voice",
+    "acg"
   ],
   "license": "MIT",
+  "registry": "https://registry.npmjs.org",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
   "bugs": {
     "url": "https://github.com/zthxxx/kugimiya-rainbow-fart/issues"
   },
-  "homepage": "https://github.com/zthxxx/kugimiya-rainbow-fart"
+  "homepage": "https://github.com/zthxxx/kugimiya-rainbow-fart",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "gulp": "^4.0.2",
+    "gulp-zip": "^5.0.2",
+    "js-yaml": "^3.14.0",
+    "rimraf": "^3.0.2",
+    "standard-version": "^8.0.0"
+  },
+  "standard-version": {
+    "skip": {
+      "bump": true,
+      "commit": true,
+      "tag": true
+    }
+  }
 }
