@@ -25,6 +25,7 @@ contributes:
   # typos
   - keywords:
       - sleect  # typo of select
+      - Sleect  # typo of select
       - fliter  # typo of filter
       - fitler  # typo of filter
       - deatil  # typo of detail
@@ -33,11 +34,15 @@ contributes:
       - Deafult  # typo of default
       - funtion  # typo of function
       - ture  # typo of true
+      - fasle  # typo of false
       - frist  # typo of first
       - filed  # typo of field
       - Filed  # typo of field
       - lable  # typo of label
       - Lable  # typo of label
+      - Botton  # typo of button
+      - buttom  # typo of button
+      - qeury  # typo of query
       - Shema  # typo of schema
       - Schame  # typo of schema
       - Resiable  # typo of resizable
@@ -53,9 +58,32 @@ contributes:
       - formated  # typo of formatted
       - Pannel  # typo of panel
       - Soruce  # typo of source
+      - Resouce  # typo of resource
       - Categorys  # typo of categories
+      - categoried  # typo of categorized
       - Propety  # typo of property
-      - Feaure  # typo of Feature
+      - Feaure  # typo of feature
+      - Instace  # typo of instance
+      - deparment  # typo of department
+      - laoding  # typo of loading
+      - Hanlder  # typo of handler
+      - paylaod  # typo of payload
+      - editting  # typo of editing
+      - Favord  # typo of favored
+      - Uncompatible  # typo of incompatible
+      - backgroud  # typo of background
+      - affact  # typo of affect
+      - udpate  # typo of update
+      - Udpate  # typo of update
+      - unkown  # typo of unknown
+      - Unkown  # typo of unknown
+      - shoud  # typo of should
+      - tigger  # typo of trigger
+      - Tigger  # typo of trigger
+      - grammer  # typo of grammar
+      - identifer  # typo of identifier
+      - Identifer  # typo of identifier
+      - retrive  # typo of retrieve
     voices:
       - voices/01-アンタなんて豆腐の角に頭ぶつけて死んじゃえばいいのよ！.mp3
       - voices/11-このぉバカ！-.mp3
