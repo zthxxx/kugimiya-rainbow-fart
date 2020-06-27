@@ -4,8 +4,11 @@
   "description": "Kugimiya voice for vscode-rainbow-fart",
   "main": "manifest.json",
   "scripts": {
-    "build": "node -r esm node_modules/.bin/gulp",
-    "changelog": "standard-version"
+    "build": "npm run gulp",
+    "clean": "npm run gulp clean",
+    "gulp": "node -r esm node_modules/.bin/gulp",
+    "bump:patch": "npm version patch --no-git-tag-version",
+    "release": "standard-version"
   },
   "author": "zthxxx",
   "repository": "zthxxx/kugimiya-rainbow-fart",
@@ -25,6 +28,7 @@
   },
   "homepage": "https://github.com/zthxxx/kugimiya-rainbow-fart",
   "devDependencies": {
+    "@actions/core": "^1.2.4",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-zip": "^5.0.2",
@@ -34,9 +38,13 @@
   },
   "standard-version": {
     "skip": {
-      "bump": true,
-      "commit": true,
-      "tag": true
-    }
+      "bump": false,
+      "commit": false,
+      "tag": false
+    },
+    "bumpFiles": [
+      "package.json",
+      "package-lock.json"
+    ]
   }
 }

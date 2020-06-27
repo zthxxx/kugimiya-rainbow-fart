@@ -1,0 +1,17 @@
+{
+    "header": "# Changelog\n",
+    "types": [
+        {"type": "feat", "section": "feat"},
+        {"type": "fix", "section": "fix"},
+        {"type": "perf", "section": "perf"},
+        {"type": "revert", "section": "revert"},
+        {"type": "docs", "section": "docs"},
+        {"type": "style", "section": "style"},
+        {"type": "chore", "section": "chore"},
+        {"type": "refactor", "section": "refactor"},
+        {"type": "test", "section": "test"},
+        {"type": "build", "section": "build"},
+        {"type": "ci", "section": "ci"}
+    ],
+    "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}(type:{{type}})"
+}

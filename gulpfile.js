@@ -3,6 +3,7 @@ import yaml from 'js-yaml'
 import gulp from 'gulp'
 import zip from 'gulp-zip'
 import rimraf from 'rimraf'
+import { setOutput } from '@actions/core'
 import rawManifest from './manifest.json'
 import pkg from './package.json'
 
@@ -49,12 +50,16 @@ gulp.task('build-manifest', (done) => {
 })
 
 
-gulp.task('bundle', () => (
-  gulp.src('build/**/*')
-    .pipe(zip(`${name}-${version}.zip`))
-    .pipe(gulp.dest('dist'))
-))
+gulp.task('bundle', async () => {
+  const bundleName = `${name}-${version}.zip`
 
+  await gulp.src('build/**/*')
+    .pipe(zip(bundleName))
+    .pipe(gulp.dest('dist'))
+
+  setOutput('bundle-file', bundleName)
+  setOutput('bundle-path', `./dist/${bundleName}`)
+})
 
 gulp.task('default', gulp.series(
   'clean',
