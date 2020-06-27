@@ -11,9 +11,15 @@ jobs:
 
     steps:
       - name: Checkout
+        # https://github.com/actions/checkout
         uses: actions/checkout@v2
+        with:
+          # Number of commits to fetch. 0 indicates all history.
+          # all history for changelog
+          fetch-depth: 0
 
       - name: Setup node
+        # https://github.com/actions/setup-node
         uses: actions/setup-node@v1
         with:
           node-version: 13.x
@@ -24,17 +30,27 @@ jobs:
 
       - name: Build
         id: build
+        # outputs:
+        #   bundle-file:
+        #     description: zip file name
+        #   bundle-path:
+        #     description: relative zip file path
         run: |
           npm run build
 
       - name: Changelog
         id: changelog
-        uses: scottbrenner/generate-changelog-action@master
-        env:
-          REPO: ${{ github.repository }}
+        # outputs:
+        #   changelog:
+        #     description: last tag changelog
+        run: |
+          git tag -d $(basename ${{ github.ref }})
+          npx standard-version --dry-run --skip.bump=true --silent > change.log
+          npm run gulp output-changelog
 
       - name: Create Release
         id: create-release
+        # https://github.com/actions/create-release
         uses: actions/create-release@v1
         env:
           # This token is provided by Actions, you do not need to create your own token
@@ -49,6 +65,7 @@ jobs:
 
       - name: Upload Release Asset
         id: upload-release-asset
+        # https://github.com/actions/upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           # This token is provided by Actions, you do not need to create your own token

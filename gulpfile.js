@@ -12,9 +12,8 @@ const { version } = pkg
 const { name } = rawManifest
 
 
-gulp.task('clean', (done) => {
-  rimraf.sync(`{dist,build}`)
-  return done()
+gulp.task('clean', async () => {
+  rimraf.sync(`{dist,build,*.log}`)
 })
 
 
@@ -59,6 +58,15 @@ gulp.task('bundle', async () => {
 
   setOutput('bundle-file', bundleName)
   setOutput('bundle-path', `./dist/${bundleName}`)
+})
+
+
+gulp.task('output-changelog', async () => {
+  const changelog = fs.readFileSync('change.log', 'utf8')
+  .replace(/^---$/mg, '')
+  .trim()
+
+  setOutput('changelog', changelog)
 })
 
 gulp.task('default', gulp.series(

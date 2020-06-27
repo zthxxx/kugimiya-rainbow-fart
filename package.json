@@ -1,6 +1,6 @@
 {
   "name": "kugimiya-rainbow-fart",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kugimiya voice for vscode-rainbow-fart",
   "main": "manifest.json",
   "scripts": {
