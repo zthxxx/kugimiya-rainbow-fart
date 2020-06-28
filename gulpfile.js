@@ -1,8 +1,9 @@
-import fs from 'fs'
-import yaml from 'js-yaml'
 import gulp from 'gulp'
+import File from 'vinyl'
 import zip from 'gulp-zip'
+import yaml from 'js-yaml'
 import rimraf from 'rimraf'
+import { Transform } from 'stream'
 import { setOutput } from '@actions/core'
 import rawManifest from './manifest.json'
 import pkg from './package.json'
@@ -11,6 +12,17 @@ import pkg from './package.json'
 const { version } = pkg
 const { name } = rawManifest
 
+/**
+ * @param {funciton} handler - deal with object stream
+ */
+const transform = (handler) => (
+  new Transform({
+    objectMode: true,
+    transform(stream, encoding, callback) {
+      callback(null, handler(stream))
+    },
+  })
+)
 
 gulp.task('clean', async () => {
   rimraf.sync(`{dist,build,*.log}`)
@@ -22,30 +34,31 @@ gulp.task('copy-assets', () => (
     .pipe(gulp.dest(`build`))
 ))
 
+/**
+ * depends on `changelog` step in release.yml
+ */
+gulp.task('build-manifest', async () => {
+  await gulp.src('keywords-voices.yml')
+    .pipe(
+      transform((file) => {
+        const voiceConfig = yaml.safeLoad(file.contents.toString())
+        const { languages, contributes } = voiceConfig
 
-gulp.task('build-manifest', (done) => {
-  const keywordsFilePath = 'keywords-voices.yml'
+        const manifest = {
+          version,
+          ...rawManifest,
+          languages,
+          contributes,
+        }
 
-  const voiceConfig = yaml.safeLoad(
-    fs.readFileSync(keywordsFilePath, 'utf8'),
-  )
-  const { languages, contributes } = voiceConfig
-
-  const manifest = {
-    version,
-    ...rawManifest,
-    languages,
-    contributes,
-  }
-
-  const manifestData = JSON.stringify(manifest, null, 2)
-  fs.writeFileSync(
-    'build/manifest.json',
-    manifestData,
-    'utf8',
-  )
-
-  return done()
+        // gulp built-in File class in vinyl
+        return new File({
+          path: `manifest.json`,
+          contents: Buffer.from(JSON.stringify(manifest, null, 2)),
+        })
+      }),
+    )
+    .pipe(gulp.dest(`build`));
 })
 
 
@@ -62,11 +75,24 @@ gulp.task('bundle', async () => {
 
 
 gulp.task('output-changelog', async () => {
-  const changelog = fs.readFileSync('change.log', 'utf8')
-  .replace(/^---$/mg, '')
-  .trim()
-
-  setOutput('changelog', changelog)
+  await gulp.src('change.log')
+    .pipe(
+      transform((file) => {
+        const changelog = file.contents.toString()
+          .replace(/^---$/mg, '')
+          .trim()
+        return changelog
+      }),
+    )
+    .pipe(
+      transform((changelog) => {
+        console.log('changelog', changelog)
+        if (process.env.CI) {
+          console.log('set actions output - "changelog"')
+          setOutput('changelog', changelog)
+        }
+      }),
+    )
 })
 
 gulp.task('default', gulp.series(
