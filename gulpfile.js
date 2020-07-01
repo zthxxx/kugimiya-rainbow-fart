@@ -37,8 +37,8 @@ gulp.task('copy-assets', () => (
 /**
  * depends on `changelog` step in release.yml
  */
-gulp.task('build-manifest', async () => {
-  await gulp.src('keywords-voices.yml')
+gulp.task('build-manifest', () => (
+  gulp.src('keywords-voices.yml')
     .pipe(
       transform((file) => {
         const voiceConfig = yaml.safeLoad(file.contents.toString())
@@ -58,24 +58,27 @@ gulp.task('build-manifest', async () => {
         })
       }),
     )
-    .pipe(gulp.dest(`build`));
-})
+    .pipe(gulp.dest(`build`))
+))
 
 
 gulp.task('bundle', async () => {
   const bundleName = `${name}-${version}.zip`
 
-  await gulp.src('build/**/*')
+  if (process.env.CI) {
+    console.log('set actions output - "bundle-file", "bundle-path"')
+    setOutput('bundle-file', bundleName)
+    setOutput('bundle-path', `./dist/${bundleName}`)
+  }
+
+  return await gulp.src('build/**')
     .pipe(zip(bundleName))
     .pipe(gulp.dest('dist'))
-
-  setOutput('bundle-file', bundleName)
-  setOutput('bundle-path', `./dist/${bundleName}`)
 })
 
 
-gulp.task('output-changelog', async () => {
-  await gulp.src('change.log')
+gulp.task('output-changelog', async () => (
+  gulp.src('change.log')
     .pipe(
       transform((file) => {
         const changelog = file.contents.toString()
@@ -93,7 +96,7 @@ gulp.task('output-changelog', async () => {
         }
       }),
     )
-})
+))
 
 gulp.task('default', gulp.series(
   'clean',

@@ -84,6 +84,9 @@ contributes:
       - identifer  # typo of identifier
       - Identifer  # typo of identifier
       - retrive  # typo of retrieve
+      - depercated  # typo of deprecated
+      - vaild  # typo of valid
+      - Vaild  # typo of valid
     voices:
       - voices/01-アンタなんて豆腐の角に頭ぶつけて死んじゃえばいいのよ！.mp3
       - voices/11-このぉバカ！-.mp3
