@@ -34,7 +34,7 @@
     "gulp-zip": "^5.0.2",
     "js-yaml": "^3.14.0",
     "rimraf": "^3.0.2",
-    "standard-version": "^8.0.0"
+    "standard-version": "^8.0.1"
   },
   "standard-version": {
     "skip": {
