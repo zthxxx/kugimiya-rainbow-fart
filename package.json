@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/zthxxx/kugimiya-rainbow-fart",
   "devDependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-zip": "^5.0.2",
