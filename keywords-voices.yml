@@ -95,10 +95,10 @@ contributes:
       - voices/21-ちょっと待ちなさいよ！この鈍感男！.mp3
       - voices/27-な、なによあいつ！.mp3
       - voices/31-寝起きになにしてんのよ！.mp3
-      - voices/34-ひ…ひざまくらぁ!……い、一分だけだからねっ.mp3
-      - voices/39-ボケーっとしてるんじゃないわよ！！.mp3
+      - voices/34-ひ…ひざまくらぁ!……い、一分だけだからねっ.mp3
+      - voices/39-ボケーっとしてるんじゃないわよ！！.mp3
       - voices/47-涙じゃないわよぉーーー！.mp3
-      - voices/48-もぉ～バカバカバカ！！.mp3
+      - voices/48-もぉ～バカバカバカ！！.mp3
       - voices/61-ろくなことがないわね…あんたと一緒にいられるのは私くらいなんだから….mp3
 
   - keywords:
@@ -106,24 +106,24 @@ contributes:
       - setInterval(
     voices:
       - voices/21-ちょっと待ちなさいよ！この鈍感男！.mp3
-      - voices/34-ひ…ひざまくらぁ!……い、一分だけだからねっ.mp3
-      - voices/39-ボケーっとしてるんじゃないわよ！！.mp3
+      - voices/34-ひ…ひざまくらぁ!……い、一分だけだからねっ.mp3
+      - voices/39-ボケーっとしてるんじゃないわよ！！.mp3
       - voices/60-連絡くらいよこしなさいよ！心配したんだから….mp3
 
   - keywords:
       - 'import '
     voices:
-      - voices/24-ついでだから、あんたも誘ってあげるわ.mp3
+      - voices/24-ついでだから、あんたも誘ってあげるわ.mp3
       - voices/26-隣に来ないでよ、恥ずかしいじゃない.mp3
       - voices/40-蹴り飛ばすわよ！.mp3
-      - voices/41-まっ…まぁ、アナタがどうしてもって言うのなら.mp3
+      - voices/41-まっ…まぁ、アナタがどうしてもって言うのなら.mp3
 
   - keywords:
       - 'function '
       - '() => '
     voices:
       - voices/15-もう…バカ….mp3
-      - voices/16-全力で来なさいよ？叩き潰してあげるから.mp3
+      - voices/16-全力で来なさいよ？叩き潰してあげるから.mp3
       - voices/20-これプレゼント….mp3
       - voices/23-なんで気付かないのよぉ！.mp3
       - voices/42-仕方ないけど….mp3
@@ -133,7 +133,7 @@ contributes:
       - if (
       - ' ? '
     voices:
-      - voices/06-勘違いしないでよね.mp3
+      - voices/06-勘違いしないでよね.mp3
       - voices/22-なんで….mp3
       - voices/38-もう知らない….mp3
       - voices/49-知らない知らない知らない.mp3
@@ -156,7 +156,7 @@ contributes:
       - voices/03-うるさい、うるさい、うるさい！.mp3
       - voices/37-変態、変態、変態、変態、変態バカ大変態！！！.mp3
       - voices/15-もう…バカ….mp3
-      - voices/48-もぉ～バカバカバカ！！.mp3
+      - voices/48-もぉ～バカバカバカ！！.mp3
 
   - keywords:
       - 'async '
@@ -166,9 +166,9 @@ contributes:
   - keywords:
       - 'await '
     voices:
-      - voices/17-そばにいなさい！一生よ！いいわね！.mp3
-      - voices/30-もうっ、知らない、バカ！！何言わせんのよ！！.mp3
-      - voices/33-恥ずかしいけど、手、手くらい繋いであげてもいいわよ、ホラ！！.mp3
+      - voices/17-そばにいなさい！一生よ！いいわね！.mp3
+      - voices/30-もうっ、知らない、バカ！！何言わせんのよ！！.mp3
+      - voices/33-恥ずかしいけど、手、手くらい繋いであげてもいいわよ、ホラ！！.mp3
       - voices/60-連絡くらいよこしなさいよ！心配したんだから….mp3
 
   - keywords:
@@ -176,7 +176,7 @@ contributes:
       - try {
       - 'try:'
     voices:
-      - voices/06-勘違いしないでよね.mp3
+      - voices/06-勘違いしないでよね.mp3
       - voices/13-心配なんてしてないんだからね！.mp3
       - voices/31-寝起きになにしてんのよ！.mp3
       - voices/51-優柔不断な奴はキライだからね！.mp3
@@ -197,14 +197,14 @@ contributes:
       - voices/07-別にあんたのためにやったわけじゃないんだから.mp3
       - voices/10-怪我でもされたら、私が困るじゃない.mp3
       - voices/12-さよならなんて言ってあげないんだから！.mp3
-      - voices/16-全力で来なさいよ？叩き潰してあげるから.mp3
-      - voices/29-逃げないで、話くらいちゃんと聞きなさいよね.mp3
+      - voices/16-全力で来なさいよ？叩き潰してあげるから.mp3
+      - voices/29-逃げないで、話くらいちゃんと聞きなさいよね.mp3
 
   - keywords:
       - return null
       - "return\n"
     voices:
-      - voices/45-無視しないでよ！謝るから！.mp3
+      - voices/45-無視しないでよ！謝るから！.mp3
 
   - keywords:
       - this.
@@ -228,7 +228,7 @@ contributes:
     voices:
       - voices/14-好きでこんな格好してるわけじゃないんだからね…あんたの前だけよ….mp3
       - voices/20-これプレゼント….mp3
-      - voices/55-あたしのこと好きでも嫌いでもないなんて言うのは.mp3
+      - voices/55-あたしのこと好きでも嫌いでもないなんて言うのは.mp3
 
   - keywords:
       - kiss
