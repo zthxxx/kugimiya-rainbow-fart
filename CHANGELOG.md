@@ -1,6 +1,17 @@
 # Changelog
 
-### [1.0.1](https://github.com/zthxxx/kugimiya-rainbow-fart/compare/v1.0.0...v1.0.1) (2020-06-29)
+## [1.0.3](https://github.com/zthxxx/kugimiya-rainbow-fart/compare/v1.0.2...v1.0.3) (2020-10-08)
+
+### fix
+
+* fix issues of 'voices/filename' typo ([eb1d1f1](https://github.com/zthxxx/kugimiya-rainbow-fart/commit/eb1d1f1ac2f2ec8dfa5849604ba1fc97b5b92868(type:fix)))
+
+### chore
+
+* **deps-dev:** bump @actions/core from 1.2.4 to 1.2.6 ([0db407f](https://github.com/zthxxx/kugimiya-rainbow-fart/commit/0db407f52ff9e32d162ff2bd53cc5b4d1caf202b(type:chore)))
+
+
+## [1.0.1](https://github.com/zthxxx/kugimiya-rainbow-fart/compare/v1.0.0...v1.0.1) (2020-06-29)
 
 
 ### docs
