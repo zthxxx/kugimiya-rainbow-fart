@@ -13,5 +13,5 @@
         {"type": "build", "section": "build"},
         {"type": "ci", "section": "ci"}
     ],
-    "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}(type:{{type}})"
+    "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}"
 }
