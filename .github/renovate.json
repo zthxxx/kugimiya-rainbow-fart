@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "config:base",
+    "group:allNonMajor"
+  ],
+  "rangeStrategy": "bump",
+  "schedule": ["before 12am every 2 weeks on Tuesday"],
+  "timezone": "Asia/Shanghai"
+}
