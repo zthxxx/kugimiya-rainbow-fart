@@ -41,7 +41,7 @@ gulp.task('build-manifest', () => (
   gulp.src('keywords-voices.yml')
     .pipe(
       transform((file) => {
-        const voiceConfig = yaml.safeLoad(file.contents.toString())
+        const voiceConfig = yaml.load(file.contents.toString())
         const { languages, contributes } = voiceConfig
 
         const manifest = {
