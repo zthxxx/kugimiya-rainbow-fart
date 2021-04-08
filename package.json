@@ -32,7 +32,7 @@
     "esm": "3.2.25",
     "gulp": "4.0.2",
     "gulp-zip": "5.0.2",
-    "js-yaml": "3.14.0",
+    "js-yaml": "3.14.1",
     "rimraf": "3.0.2",
     "standard-version": "8.0.1"
   },
